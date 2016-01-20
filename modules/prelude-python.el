@@ -89,6 +89,8 @@
   (subword-mode +1)
   (anaconda-mode 1)
   (eldoc-mode 1)
+  (elpy-mode)
+  (setq elpy-rpc-python-command "python3")
   (setq-local electric-layout-rules
               '((?: . (lambda ()
                         (and (zerop (first (syntax-ppss)))
