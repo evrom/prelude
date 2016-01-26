@@ -91,6 +91,9 @@
   (eldoc-mode 1)
   (elpy-mode)
   (setq elpy-rpc-python-command "python3")
+  (setq indent-tabs-mode nil)
+  (setq tab-width 4)
+  (setq python-indent 4)
   (setq-local electric-layout-rules
               '((?: . (lambda ()
                         (and (zerop (first (syntax-ppss)))
