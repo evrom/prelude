@@ -229,7 +229,9 @@ The body of the advice is in BODY."
   (when prelude-whitespace
     ;; keep the whitespace decent all the time (in this buffer)
     (add-hook 'before-save-hook 'prelude-cleanup-maybe nil t)
-    (whitespace-mode +1)))
+    (whitespace-mode +1)
+    (fci-mode +1)
+    ))
 
 (add-hook 'text-mode-hook 'prelude-enable-flyspell)
 (add-hook 'text-mode-hook 'prelude-enable-whitespace)
@@ -345,7 +347,8 @@ indent yanked text (with prefix arg don't indent)."
 (require 'whitespace)
 (setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face tabs empty trailing))
-
+(require 'fill-column-indicator)
+(setq fci-rule-column 80) 
 ;; saner regex syntax
 (require 're-builder)
 (setq reb-re-syntax 'string)
