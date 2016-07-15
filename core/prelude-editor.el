@@ -230,7 +230,6 @@ The body of the advice is in BODY."
     ;; keep the whitespace decent all the time (in this buffer)
     (add-hook 'before-save-hook 'prelude-cleanup-maybe nil t)
     (whitespace-mode +1)
-    (fci-mode +1)
     ))
 
 (add-hook 'text-mode-hook 'prelude-enable-flyspell)
