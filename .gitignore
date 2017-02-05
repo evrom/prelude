@@ -22,3 +22,6 @@ tramp
 /var/pcache
 anaconda-mode
 games
+.emacs.desktop
+.emacs.desktop.lock
+
