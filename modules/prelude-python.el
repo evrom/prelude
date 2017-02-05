@@ -32,7 +32,9 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
-
+(setq py-python-command "/usr/bin/python3")
+(setq python-shell-interpreter "/usr/bin/python3")
+(setq flycheck-python-pylint-executable "/usr/bin/pylint3")
 (prelude-require-package 'anaconda-mode)
 ;;(prelude-require-package 'elpy)
 
