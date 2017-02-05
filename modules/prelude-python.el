@@ -34,7 +34,7 @@
 ;;; Code:
 
 (prelude-require-package 'anaconda-mode)
-(prelude-require-package 'elpy)
+;;(prelude-require-package 'elpy)
 
 (when (boundp 'company-backends)
   (prelude-require-package 'company-anaconda)
