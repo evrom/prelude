@@ -91,7 +91,7 @@
   "Defaults for Python programming."
   (subword-mode +1)
   (anaconda-mode 1)
-  (eldoc-mode 1)
+  ;;(eldoc-mode 1)
   ;;(elpy-mode)
   ;;(setq elpy-rpc-python-command "python3")
   (setq indent-tabs-mode nil)
