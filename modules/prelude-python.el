@@ -34,9 +34,9 @@
 ;;; Code:
 (setq py-python-command "/usr/bin/python3")
 (setq python-shell-interpreter "/usr/bin/python3")
-(setq flycheck-python-pylint-executable "/usr/bin/pylint3")
+(setq flycheck-python-flake8-executable "/usr/bin/flake8")
 (prelude-require-package 'anaconda-mode)
-;;(prelude-require-package 'elpy)
+(prelude-require-package 'elpy)
 
 (when (boundp 'company-backends)
   (prelude-require-package 'company-anaconda)
@@ -92,7 +92,7 @@
   (subword-mode +1)
   (anaconda-mode 1)
   ;;(eldoc-mode 1)
-  ;;(elpy-mode)
+  (elpy-mode)
   ;;(setq elpy-rpc-python-command "python3")
   (setq indent-tabs-mode nil)
   (setq tab-width 4)
